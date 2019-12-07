@@ -6,6 +6,7 @@ set shiftwidth=4
 set smartcase
 set lines=43
 set belloff=all
+set scrolloff=3
 " Always increment as decimal with <C-a>
 set nrformats-=octal
 set showmode
