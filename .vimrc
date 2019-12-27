@@ -2,8 +2,12 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set number
 syntax on
+" Disable background color erase
+" https://superuser.com/questions/399296/256-color-support-for-vim-background-in-tmux/562423#562423
+set t_ut=
+" set 256 colors; needs to come before colorscheme
+" https://vim.fandom.com/wiki/256_colors_in_vim
 set t_Co=256
-set background=dark
 "http://vimcasts.org/e/2
 "tabstop specifies the width of a tab character
 "expandtab causes spaces to be used in place of tab characters
@@ -13,6 +17,7 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
+set background=dark
 set termguicolors "vivid colors
 " Make Vim colorscheme(s) work inside tmux (also requires export TERM=xterm-256color in .bashrc)
 " set Vim-specific sequences for RGB colors
