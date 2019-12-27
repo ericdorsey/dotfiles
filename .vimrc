@@ -1,4 +1,7 @@
+" https://vi.stackexchange.com/questions/10124/what-is-the-difference-between-filetype-plugin-indent-on-and-filetype-indent/10125#10125
+" http://vimdoc.sourceforge.net/htmldoc/filetype.html#:filetype-overview
 filetype plugin on
+" Enable <C-x><C-o> Omnicompletion
 set omnifunc=syntaxcomplete#Complete
 set number
 " Make backspace function more like other editors
@@ -15,10 +18,7 @@ set t_Co=256
 "expandtab causes spaces to be used in place of tab characters
 "softtabstop fine tunes the amount of white space to be inserted (fix behavior of backspace key in Insert Mode)
 "shiftwdith determines the amount of white space to insert using the indentation commands in Normal Mode (< and >)
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set expandtab
+set shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 set background=dark
 set termguicolors "vivid colors
 " Make Vim colorscheme(s) work inside tmux (also requires export TERM=xterm-256color in .bashrc)
@@ -30,6 +30,14 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set scrolloff=3
 set showmode
-set hls
+" Highlight search match
+set hlsearch
+" Start searching as search string is typed
+set incsearch
 let g:gruvbox_contrast_dark = 'medium'
 colorscheme gruvbox
+" Set Backup / Swap / Undo
+" https://medium.com/@Aenon/vim-swap-backup-undo-git-2bf353caa02f
+set backupdir=$HOME/.vim_backupswapundo
+set directory=$HOME/.vim_backupswapundo
+set undodir=$HOME/.vim_backupswapundo
