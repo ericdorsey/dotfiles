@@ -1,4 +1,3 @@
-
 filetype plugin on
 " Enable <C-x><C-o> Omnicompletion
 set omnifunc=syntaxcomplete#Complete
