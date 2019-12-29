@@ -1,4 +1,5 @@
 filetype plugin on
+set guifont=Consolas:h11:cANSI
 " Enable <C-x><C-o> Omnicompletion
 set omnifunc=syntaxcomplete#Complete
 set number
@@ -24,15 +25,17 @@ set termguicolors "vivid colors
 " https://stackoverflow.com/questions/47969858/vim-colors-not-showing-in-tmux/47994805#47994805
 " From GitHub > Vim repo > Issue: 'termguicolors doesn't work in terminal Vim'
 " https://github.com/vim/vim/issues/993#issuecomment-255651605
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set scrolloff=3
 set showmode
 " Highlight search match
 set hlsearch
 " Start searching as search string is typed
 set incsearch
-colorscheme desert
+let g:gruvbox_contrast_dark = 'medium'
+" Requires ~/vimfiles/colors/gruvbox.vim
+colorscheme gruvbox
 set lines=43
 set belloff=all
 " Always increment as decimal with <C-a>
