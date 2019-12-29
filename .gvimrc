@@ -20,13 +20,6 @@ set t_Co=256
 set shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 set background=dark
 set termguicolors "vivid colors
-" Make Vim colorscheme(s) work inside tmux (also requires export TERM=xterm-256color in .bashrc)
-" set Vim-specific sequences for RGB colors
-" https://stackoverflow.com/questions/47969858/vim-colors-not-showing-in-tmux/47994805#47994805
-" From GitHub > Vim repo > Issue: 'termguicolors doesn't work in terminal Vim'
-" https://github.com/vim/vim/issues/993#issuecomment-255651605
-"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set scrolloff=3
 set showmode
 " Highlight search match
