@@ -29,7 +29,7 @@ set incsearch
 let g:gruvbox_contrast_dark = 'medium'
 " Requires ~/vimfiles/colors/gruvbox.vim
 colorscheme gruvbox
-set lines=43
+set lines=44 columns=140
 set belloff=all
 " Always increment as decimal with <C-a>
 set nrformats-=octal
