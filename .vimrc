@@ -7,6 +7,8 @@ set number
 " Make backspace function more like other editors
 set backspace=indent,eol,start
 syntax on
+" Treat numberals as digits, regardless of padded zeros (Practical Vim, p. 22)
+set nrformats-=octal
 " Disable background color erase
 " https://superuser.com/questions/399296/256-color-support-for-vim-background-in-tmux/562423#562423
 set t_ut=
