@@ -22,7 +22,7 @@ set shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 set hidden
 set background=dark
 set termguicolors "vivid colors
-set scrolloff=3
+set ruler 
 set showmode
 " Highlight search match
 set hlsearch
