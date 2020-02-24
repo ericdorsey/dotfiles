@@ -39,6 +39,11 @@ set hlsearch
 set incsearch
 let g:gruvbox_contrast_dark = 'medium'
 colorscheme gruvbox
+set list
+set listchars=
+set listchars+=eol:¬
+set listchars+=trail:⋅
+set listchars+=space:⋅
 " Set Backup / Swap / Undo
 " https://medium.com/@Aenon/vim-swap-backup-undo-git-2bf353caa02f
 set backupdir=$HOME/.vim_backupswapundo
