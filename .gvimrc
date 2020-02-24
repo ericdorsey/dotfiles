@@ -36,7 +36,12 @@ set belloff=all
 " Always increment as decimal with <C-a>
 set nrformats-=octal
 let skip_loading_mswin=1
-behave xterm
+"behave xterm
+set list
+set listchars=
+set listchars+=eol:¬
+set listchars+=trail:⋅
+set listchars+=space:⋅
 " Set Backup / Swap etc
 " https://medium.com/@Aenon/vim-swap-backup-undo-git-2bf353caa02f
 set backupdir=$HOME/.vim_backupswapundo
