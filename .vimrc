@@ -21,6 +21,8 @@ set t_Co=256
 "softtabstop fine tunes the amount of white space to be inserted (fix behavior of backspace key in Insert Mode)
 "shiftwdith determines the amount of white space to insert using the indentation commands in Normal Mode (< and >)
 set shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+" use 2 spaces for YAML
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 " https://medium.com/usevim/vim-101-set-hidden-f78800142855
 set hidden
 set background=dark
