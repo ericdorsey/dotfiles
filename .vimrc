@@ -39,8 +39,12 @@ set showmode
 set hlsearch
 " Start searching as search string is typed
 set incsearch
-let g:gruvbox_contrast_dark = 'medium'
-colorscheme gruvbox
+try
+    let g:gruvbox_contrast_dark = 'medium'
+    colorscheme gruvbox
+catch /^Vim\%((\a\+)\)\=:E185/
+    " gruvbox colorscheme doesn't exist -- do nothing
+endtry
 set list
 set listchars=
 set listchars+=eol:¬
