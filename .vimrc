@@ -55,3 +55,7 @@ set listchars+=space:⋅
 set backupdir=$HOME/.vim_backupswapundo
 set directory=$HOME/.vim_backupswapundo
 set undodir=$HOME/.vim_backupswapundo
+" http://adrianlikins.com/2011/06/git-diff-like-highlighting-of-extra-whitespace-in-vim-and-emacs/
+let c_space_errors=1
+highlight RedundantSpaces ctermbg=red guibg=red
+match RedundantSpaces /\s\+$\| \+\ze\t/
